@@ -1,0 +1,27 @@
+/* --------------------------------------------------------
+Style Sheet for GDG Kozhikode
+
+version: 1.0
+last modified: 15.07.2016 by Mohd Riaz
+author: Mohd Riaz
+email: riyasekmvr@gmail.com
+----------------------------------------------------------*/
+/*----Variables----*/
+/*----Fonts----*/
+@import 'https://fonts.googleapis.com/css?family=Roboto';
+/*----Header Navigation----*/
+.gdg-header-wrapper {
+  background: transparent;
+  min-height: 62px;
+  border-radius: 0px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+.gdg-header-wrapper ul {
+  padding: 5px 0px;
+}
+.gdg-header-wrapper ul li {
+  text-transform: uppercase;
+}
