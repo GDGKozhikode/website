@@ -8,7 +8,10 @@ email: riyasekmvr@gmail.com
 ----------------------------------------------------------*/
 /*----Variables----*/
 /*----Fonts----*/
-@import 'https://fonts.googleapis.com/css?family=Roboto';
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700';
+body {
+  font-family: 'Roboto', sans-serif;
+}
 /*----Header Navigation----*/
 .gdg-header-wrapper {
   background: transparent;
@@ -17,11 +20,89 @@ email: riyasekmvr@gmail.com
   position: fixed;
   top: 0px;
   width: 100%;
+  z-index: 999;
   font-family: 'Roboto', sans-serif;
+  border: none;
 }
 .gdg-header-wrapper ul {
   padding: 5px 0px;
 }
 .gdg-header-wrapper ul li {
   text-transform: uppercase;
+}
+.gdg-header-wrapper ul li a {
+  font-weight: 700;
+  font-size: 16px;
+  /*padding: 20px 15px;*/
+}
+@media (max-width: 767px) {
+  .gdg-header-wrapper .navbar-collapse {
+    border: none;
+    background-color: #fff;
+    text-align: center;
+  }
+  .gdg-header-wrapper button {
+    color: #dd4f43;
+    font-size: 30px;
+    background-color: transparent;
+  }
+  .gdg-header-wrapper buttonhover {
+    background-color: #a52d2d;
+  }
+  nav ul li {
+    float: none;
+  }
+  .navbar-default .navbar-toggle {
+    border: none;
+  }
+  .navbar-default .navbar-toggle:focus,
+  .navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+  }
+}
+@media (min-width: 768px) {
+  .gdg-header-wrapper .navbar-brand {
+    width: 190px;
+  }
+  .gdg-header-wrapper ul li a {
+    padding: 12px 8px;
+  }
+}
+@media (min-width: 992px) {
+  .gdg-header-wrapper .navbar-brand {
+    width: 255px;
+  }
+  .gdg-header-wrapper ul li a {
+    padding: 20px 15px;
+  }
+}
+.gdg-into {
+  background: url(../imgs/tempimgs/bg.png);
+  min-height: 700px;
+}
+.gdg-intro-logo {
+  margin-top: 240px;
+  text-align: center;
+}
+.gdg-intro-logo img {
+  margin: 0 auto;
+  width: 670px;
+}
+.gdg-intro-logo h3 {
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-top: 5px;
+  color: #727173;
+  letter-spacing: 2px;
+  font-size: 26px;
+}
+.gdg-intro-logo a {
+  background-color: #de5246;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin: 20px 0px;
+}
+.gdg-intro-logo a:hover {
+  background-color: #a52d2d;
+  color: #fff;
 }

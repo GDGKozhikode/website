@@ -12,7 +12,10 @@ email: riyasekmvr@gmail.com
 @theme-font: 'Roboto', sans-serif;
 
 /*----Fonts----*/
-@import 'https://fonts.googleapis.com/css?family=Roboto';
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700';
+body{
+	font-family: @theme-font;
+}
 
 
 /*----Header Navigation----*/
@@ -23,12 +26,118 @@ email: riyasekmvr@gmail.com
 	position: fixed;
 	top: 0px;
 	width: 100%;
+	z-index: 999;
 	font-family: @theme-font;
+	border:none;
 	ul{
 		padding: 5px 0px;
 		li{
 			text-transform: uppercase;
+			a{
+				font-weight: 700;
+				font-size: 16px;
+				/*padding: 20px 15px;*/
+			}
 		}
 	}
 
 }
+
+@media(max-width: 767px){
+	.gdg-header-wrapper{
+		.navbar-collapse{
+			border: none;
+			background-color: #fff;
+			text-align: center;
+		}
+		button{
+			color: #dd4f43;
+			font-size: 30px;
+			background-color: transparent;
+			&hover{
+				background-color: #a52d2d;
+			}
+		}
+
+	}
+	nav{
+		ul{
+			li{
+				float: none;
+			}
+		}
+	}
+	.navbar-default .navbar-toggle{
+		border: none;
+	}
+	.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
+		background-color: transparent;
+	}
+
+}
+@media(min-width: 768px){
+	.gdg-header-wrapper{
+		.navbar-brand{
+			width: 190px;
+		}
+		ul{
+			li{
+				a{
+					padding: 12px 8px;
+				}
+			}
+		}
+	}
+
+}
+@media(min-width: 992px){
+	.gdg-header-wrapper{
+		.navbar-brand{
+			width: 255px;
+		}
+		ul{
+			li{
+				a{
+					padding: 20px 15px;
+				}
+			}
+		}
+	}
+	
+}
+@media(min-width: 1200px){
+	
+}
+.gdg-into{
+	background: url(../imgs/tempimgs/bg.png);
+	min-height: 700px;
+}
+.gdg-intro-logo{
+	margin-top: 240px;
+	text-align: center;
+	img{
+		margin: 0 auto;
+		width: 670px;
+	}
+	h3{
+		text-transform: uppercase;
+		font-weight: 400;
+		margin-top: 5px;
+		color: #727173;
+		letter-spacing: 2px;
+		font-size: 26px;
+	}
+	a{
+		background-color: #de5246;
+		padding-left: 25px;
+		padding-right: 25px;
+		margin: 20px 0px;
+		&:hover{
+			background-color:#a52d2d;
+			color: #fff;
+		}
+	}
+}
+
+
+
