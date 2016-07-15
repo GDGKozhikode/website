@@ -28,12 +28,7 @@
             <div class="container">
 
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed glyphicon glyphicon-th-list" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                        <!-- <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span> -->
-                        <!-- <span class="g" ></span> -->
+                    <button type="button" class="navbar-toggle collapsed glyphicon glyphicon-menu-hamburger" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                     </button>
                     <a class="navbar-brand" href="#">
                         <img src="imgs/logo.png" class="img-responsive" >
@@ -42,10 +37,10 @@
 
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">Welcome</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Groups</a></li>
-                        <li><a href="#">Events</a></li>
+                        <li><a rel="relativeanchor" href="#intro">Welcome</a></li>
+                        <li><a rel="relativeanchor" href="#about">About</a></li>
+                        <li><a rel="relativeanchor" href="#">Groups</a></li>
+                        <li><a rel="relativeanchor" href="#">Events</a></li>
                         <li><a href="#">Team</a></li>
                         <li><a href="#">Contact</a></li>
                         <li><a href="#">Join Us</a></li>
@@ -54,7 +49,7 @@
             </div>
         </nav>
     </header>
-    <section class="gdg-into" >
+    <section class="gdg-into" id="intro">
         <div class="container" >
             <div class="row" >
                 <div class="col-sm-12" >
@@ -68,10 +63,24 @@
         </div>
         
     </section>
+    <section class="gdg-about" id="about" >
+        <div class="container" >
+            <div class="row" >
+                <div class="col-sm-12" >
+                    <h2>About Us</h2>
+                    <p>Google Developer Groups (GDGs) are for developers who are interested in Google’s developer technology; everything from the Android, App Engine, and Google Chrome platforms, to product APIs like the Maps API, YouTube API and Google Calendar API.</p>
+                    <p>A GDG can take many forms — from just a few people getting together to watch our latest video, to large gatherings with demos and tech talks, to events like code sprints and hackathons. However, at the core, GDGs are focused on developers and technical content, and the core audience should be developers.</p>
+                    <p>We rooted on a quiet, rural river valley in Kerala, India based an open and non-profit developers group that aims to learn, share and know more about Google developer technologies; everything from the Android and App Engine platforms, to product APIs like the YouTube API and the Google Calendar API. The events organised by this group are absolutely open to newbies, developers, students, lecturers and anyone who is interested in learning, sharing, and discovering Google’s technologies.We plan regular meetup/events to discuss, share experience, share and get knowledge amongst the group.</p>
+                </div>
+            </div>
+        </div>
+        
+    </section>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
